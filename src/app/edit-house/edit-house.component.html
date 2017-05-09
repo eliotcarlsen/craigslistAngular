@@ -1,0 +1,33 @@
+<div>
+  <div>
+    <label>edit a category:</label>
+    <br>
+    <input #newtype>
+  </div>
+  <div>
+    <label>edit the location:</label>
+    <br>
+    <input #newlocation>
+  </div>
+  <div>
+    <label>edit title</label>
+    <br>
+    <input #newtitle>
+  </div>
+  <div>
+    <label>edit body</label>
+    <br>
+    <textarea #newbody></textarea>
+  </div>
+  <div>
+    <label>edit rent</label>
+    <br>
+    <input #newrent>
+  </div>
+  <div>
+    <label>edit available</label>
+    <br>
+    <input #newavailability>
+  </div>
+  <button (click)="submitForm(newtype.value, newlocation.value, newtitle.value, newbody.value, newrent.value, newavailability.value); newtype.value=''; newlocation.value=''; newtitle.value=''; newbody.value=''; newrent.value=''; newavailability.value='';">Add</button>
+</div>

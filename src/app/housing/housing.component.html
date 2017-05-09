@@ -1,0 +1,12 @@
+<p>
+  housing, apartments, real estate, etc
+</p>
+<div *ngFor="let house of houses | async" class="panel panel-default">
+  <div class="panel-body">
+    <h3 (click)="goToDetailPage(house)"><em>{{house.title}}</em> {{house.price}}</h3>
+    <div *ngIf="currentRoute === '/admin'">
+      {{house.body}}
+      <app-edit-house [selectedHouse]="house"></app-edit-house>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,37 @@
+{ "houses": [{
+    "type": "Apartment",
+    "location": "Capitol Hill",
+    "title": "Amazing space close to downtown.",
+    "body": "This is an amazing apartment with lots of light.",
+    "price": 700,
+    "availability": "6/1/17"
+  }, {
+    "type": "Apartment",
+    "location": "Capitol Hill",
+    "title": "Amazing space close to downtown.",
+    "body": "This is an amazing apartment with lots of light.",
+    "price": 700,
+    "availability": "6/1/17"
+  }, {
+    "type": "Apartment",
+    "location": "Capitol Hill",
+    "title": "Amazing space close to downtown.",
+    "body": "This is an amazing apartment with lots of light.",
+    "price": 700,
+    "availability": "6/1/17"
+  }, {
+    "type": "Apartment",
+    "location": "Capitol Hill",
+    "title": "Amazing space close to downtown.",
+    "body": "This is an amazing apartment with lots of light.",
+    "price": 700,
+    "availability": "6/1/17"
+  }, {
+    "type": "Apartment",
+    "location": "Capitol Hill",
+    "title": "Amazing space close to downtown.",
+    "body": "This is an amazing apartment with lots of light.",
+    "price": 700,
+    "availability": "6/1/17"
+    }]
+}

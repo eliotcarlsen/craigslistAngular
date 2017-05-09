@@ -1,0 +1,34 @@
+<div>
+  <h3>what type of posting is this:(see prohibited list before posting.)</h3>
+  <div>
+    <label>please choose a category:</label>
+    <br>
+    <input #newtype>
+  </div>
+  <div>
+    <label>choose the location that fits best:</label>
+    <br>
+    <input #newlocation>
+  </div>
+  <div>
+    <label>posting title</label>
+    <br>
+    <input #newtitle>
+  </div>
+  <div>
+    <label>posting body</label>
+    <br>
+    <textarea #newbody></textarea>
+  </div>
+  <div>
+    <label>rent</label>
+    <br>
+    <input #newrent>
+  </div>
+  <div>
+    <label>available on</label>
+    <br>
+    <input #newavailability>
+  </div>
+  <button (click)="submitForm(newtype.value, newlocation.value, newtitle.value, newbody.value, newrent.value, newavailability.value); newtype.value=''; newlocation.value=''; newtitle.value=''; newbody.value=''; newrent.value=''; newavailability.value='';">Add</button>
+</div>
