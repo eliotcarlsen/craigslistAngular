@@ -3,7 +3,7 @@
   <div>
     <label>please choose a category:</label>
     <br>
-    <input #newtype>
+    <input #newcategory>
   </div>
   <div>
     <label>choose the location that fits best:</label>
@@ -21,14 +21,9 @@
     <textarea #newbody></textarea>
   </div>
   <div>
-    <label>rent</label>
+    <label>contact</label>
     <br>
-    <input #newrent>
+    <input #newcontact>
   </div>
-  <div>
-    <label>available on</label>
-    <br>
-    <input #newavailability>
-  </div>
-  <button (click)="submitForm(newtype.value, newlocation.value, newtitle.value, newbody.value, newrent.value, newavailability.value); newtype.value=''; newlocation.value=''; newtitle.value=''; newbody.value=''; newrent.value=''; newavailability.value='';">Add</button>
+  <button (click)="submitForm(newcategory.value, newlocation.value, newtitle.value, newbody.value, newcontact.value); newcategory.value=''; newlocation.value=''; newtitle.value=''; newbody.value=''; newcontact.value='';">Add</button>
 </div>

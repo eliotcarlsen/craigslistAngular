@@ -6,6 +6,10 @@ import { HousingComponent } from './housing/housing.component';
 import { HouseDetailComponent } from './house-detail/house-detail.component';
 import { NewHouseComponent } from './new-house/new-house.component';
 import { AdminComponent } from './admin/admin.component';
+import { TypeOfPostingComponent } from './type-of-posting/type-of-posting.component';
+import { NewCommunityComponent } from './new-community/new-community.component';
+import { CommunityDetailComponent } from './community-detail/community-detail.component';
+import { CommunityComponent } from './community/community.component';
 
 const appRoutes: Routes = [
   {
@@ -25,12 +29,28 @@ const appRoutes: Routes = [
     component: HouseDetailComponent
   },
   {
-    path: 'new-house',
+    path: 'type-of-posting/new-house',
     component: NewHouseComponent
   },
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'type-of-posting',
+    component: TypeOfPostingComponent
+  },
+  {
+    path: 'type-of-posting/new-community',
+    component: NewCommunityComponent
+  },
+  {
+    path: 'community/:id',
+    component: CommunityDetailComponent
+  },
+  {
+    path: 'community',
+    component: CommunityComponent
   }
 ];
 

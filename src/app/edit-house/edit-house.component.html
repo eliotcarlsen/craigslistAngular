@@ -2,32 +2,33 @@
   <div>
     <label>edit a category:</label>
     <br>
-    <input #newtype>
+    <input [(ngModel)]="selectedHouse.type">
   </div>
   <div>
     <label>edit the location:</label>
     <br>
-    <input #newlocation>
+    <input [(ngModel)]="selectedHouse.location">
   </div>
   <div>
     <label>edit title</label>
     <br>
-    <input #newtitle>
+    <input [(ngModel)]="selectedHouse.title">
   </div>
   <div>
     <label>edit body</label>
     <br>
-    <textarea #newbody></textarea>
+    <textarea [(ngModel)]="selectedHouse.body"></textarea>
   </div>
   <div>
     <label>edit rent</label>
     <br>
-    <input #newrent>
+    <input [(ngModel)]="selectedHouse.price">
   </div>
   <div>
     <label>edit available</label>
     <br>
-    <input #newavailability>
+    <input [(ngModel)]="selectedHouse.availability">
   </div>
-  <button (click)="submitForm(newtype.value, newlocation.value, newtitle.value, newbody.value, newrent.value, newavailability.value); newtype.value=''; newlocation.value=''; newtitle.value=''; newbody.value=''; newrent.value=''; newavailability.value='';">Add</button>
+  <button (click)="beginUpdatingHouse(selectedHouse)">Update</button>
+  <button (click)="beginDeletingHouse(selectedHouse)">Delete</button>
 </div>

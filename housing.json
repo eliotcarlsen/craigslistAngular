@@ -33,5 +33,12 @@
     "body": "This is an amazing apartment with lots of light.",
     "price": 700,
     "availability": "6/1/17"
+    }],
+  "communities": [{
+    "category": "general community",
+    "location": "seattle",
+    "title": "party",
+    "body": "party for animals",
+    "contact": "party@gmail.com"
     }]
 }

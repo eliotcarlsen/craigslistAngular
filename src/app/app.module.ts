@@ -14,6 +14,10 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { NewHouseComponent } from './new-house/new-house.component';
 import { AdminComponent } from './admin/admin.component';
 import { EditHouseComponent } from './edit-house/edit-house.component';
+import { NewCommunityComponent } from './new-community/new-community.component';
+import { CommunityDetailComponent } from './community-detail/community-detail.component';
+import { TypeOfPostingComponent } from './type-of-posting/type-of-posting.component';
+import { CommunityComponent } from './community/community.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -31,7 +35,11 @@ export const firebaseConfig = {
     HouseDetailComponent,
     NewHouseComponent,
     AdminComponent,
-    EditHouseComponent
+    EditHouseComponent,
+    NewCommunityComponent,
+    CommunityDetailComponent,
+    TypeOfPostingComponent,
+    CommunityComponent
   ],
   imports: [
     BrowserModule,

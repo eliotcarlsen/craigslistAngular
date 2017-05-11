@@ -6,7 +6,7 @@
     "Eliot Carlsen <eliot.carlsen@gmail.com>"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/eliotcarlsen/craigslistAngular",
   "ignore": [
     "**/.*",
     "node_modules",

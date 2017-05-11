@@ -17,4 +17,11 @@ export class EditHouseComponent implements OnInit {
   ngOnInit() {
   }
 
+  beginUpdatingHouse(house){
+    this.housingService.updateHouse(house);
+  }
+  beginDeletingHouse(houseToDelete){
+    this.housingService.deleteHouse(houseToDelete);
+  }
+
 }

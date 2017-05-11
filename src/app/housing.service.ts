@@ -9,16 +9,21 @@ export class HousingService {
   constructor(private database: AngularFireDatabase) {
     this.houses = database.list('houses');
   }
-  getHouses(){
+  getHouses() {
     return this.houses;
   }
-  getHouseById(houseId: number){
-    return this.database.object('houses/' + houseId)
+  getHouseById(houseId) {
+    return this.database.object('houses/' + houseId);
   }
-  addHouse(newHouse: Housing){
+  addHouse(newHouse: Housing) {
     this.houses.push(newHouse);
   }
-  editHouse(){
-    
+  updateHouse(localUpdatedHouse) {
+    const houseUpdate = this.getHouseById(localUpdatedHouse.$key);
+    houseUpdate.update({type: localUpdatedHouse.type, location: localUpdatedHouse.location, title: localUpdatedHouse.title, body: localUpdatedHouse.body, price: localUpdatedHouse.price, availability: localUpdatedHouse.availability});
+  }
+  deleteHouse(localHouseToDelete) {
+    const houseInFirebase = this.getHouseById(localHouseToDelete.$key);
+    houseInFirebase.remove();
   }
 }
